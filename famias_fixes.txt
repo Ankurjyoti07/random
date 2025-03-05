@@ -1,0 +1,649 @@
+(base) c4011027@sage-301536:~$ conda env list
+# conda environments:
+#
+base                  *  /home/c4011027/anaconda3
+binaryc                  /home/c4011027/anaconda3/envs/binaryc
+iacob                    /home/c4011027/anaconda3/envs/iacob
+pbjam                    /home/c4011027/anaconda3/envs/pbjam
+pssa_aims                /home/c4011027/anaconda3/envs/pssa_aims
+pymc                     /home/c4011027/anaconda3/envs/pymc
+stats                    /home/c4011027/anaconda3/envs/stats
+suppnet                  /home/c4011027/anaconda3/envs/suppnet
+
+(base) c4011027@sage-301536:~$ conda activate stats
+(stats) c4011027@sage-301536:~$ cd PhD_stuff/famias_dynamic/famias/
+(stats) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ FAMIAS
+FAMIAS: error while loading shared libraries: libqwt-qt4.so.5: cannot open shared object file: No such file or directory
+(stats) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ grep -r "qt"
+grep: libaudio.so.2: binary file matches
+grep: libQtSvg.so.4: binary file matches
+grep: libQtGui.so.4: binary file matches
+grep: documentation/screenshot_tutorial4.png: binary file matches
+documentation/labels.pl:$key = q/freqtable/;
+documentation/labels.pl:$key = q/freqtable/;
+grep: documentation/screenshot_tutorial5.png: binary file matches
+documentation/Least_Squares_Fitting_I.html:Exports all frequency, amplitude and phase values of the List of frequencies to an ASCII file. The file format is compatible with the program Period04 (see example on p.&nbsp;<A HREF="Least_Squares_Fitting.html#freqtable"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+documentation/Least_Squares_Fitting_I.html:Imports an ASCII list of frequencies having the following four-column format separated with tabulators: frequency counter, frequency value, amplitude, phase (see example on p.&nbsp;<A HREF="Least_Squares_Fitting.html#freqtable"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+grep: documentation/img194.png: binary file matches
+grep: documentation/screenshot_phottutorial3.png: binary file matches
+documentation/Least_Squares_Fitting.html:</TABLE><A NAME="freqtable"></A>
+grep: documentation/screenshot_phottutorial2.png: binary file matches
+grep: documentation/screenshot_tutorial7.png: binary file matches
+grep: documentation/screenshot_tutorial2.png: binary file matches
+grep: documentation/screenshot_phottutorial1.png: binary file matches
+grep: documentation/screenshot_tutorial6.png: binary file matches
+grep: documentation/screenshot_tutorial1.png: binary file matches
+grep: documentation/img116.png: binary file matches
+documentation/internals.pl:$key = q/freqtable/;
+grep: documentation/screenshot_tutorial8.png: binary file matches
+grep: documentation/screenshot_tutorial3.png: binary file matches
+grep: yes/libaudio.so.2: binary file matches
+grep: yes/libQtSvg.so.4: binary file matches
+grep: yes/libQtGui.so.4: binary file matches
+grep: yes/documentation/screenshot_tutorial4.png: binary file matches
+yes/documentation/labels.pl:$key = q/freqtable/;
+yes/documentation/labels.pl:$key = q/freqtable/;
+grep: yes/documentation/screenshot_tutorial5.png: binary file matches
+yes/documentation/Least_Squares_Fitting_I.html:Exports all frequency, amplitude and phase values of the List of frequencies to an ASCII file. The file format is compatible with the program Period04 (see example on p.&nbsp;<A HREF="Least_Squares_Fitting.html#freqtable"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+yes/documentation/Least_Squares_Fitting_I.html:Imports an ASCII list of frequencies having the following four-column format separated with tabulators: frequency counter, frequency value, amplitude, phase (see example on p.&nbsp;<A HREF="Least_Squares_Fitting.html#freqtable"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+grep: yes/documentation/img194.png: binary file matches
+grep: yes/documentation/screenshot_phottutorial3.png: binary file matches
+yes/documentation/Least_Squares_Fitting.html:</TABLE><A NAME="freqtable"></A>
+grep: yes/documentation/screenshot_phottutorial2.png: binary file matches
+grep: yes/documentation/screenshot_tutorial7.png: binary file matches
+grep: yes/documentation/screenshot_tutorial2.png: binary file matches
+grep: yes/documentation/screenshot_phottutorial1.png: binary file matches
+grep: yes/documentation/screenshot_tutorial6.png: binary file matches
+grep: yes/documentation/screenshot_tutorial1.png: binary file matches
+grep: yes/documentation/img116.png: binary file matches
+yes/documentation/internals.pl:$key = q/freqtable/;
+grep: yes/documentation/screenshot_tutorial8.png: binary file matches
+grep: yes/documentation/screenshot_tutorial3.png: binary file matches
+grep: yes/libqwt-qt4.so.5: binary file matches
+grep: yes/libQtCore.so.4: binary file matches
+grep: yes/images/famiaslogo.png: binary file matches
+grep: yes/FAMIAS: binary file matches
+grep: yes/libgcc_s.so.1: binary file matches
+grep: libqwt-qt4.so.5: binary file matches
+grep: libQtCore.so.4: binary file matches
+grep: images/famiaslogo.png: binary file matches
+grep: FAMIAS: binary file matches
+grep: libgcc_s.so.1: binary file matches
+(stats) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ locate libqwt-qt4.so.5
+Command 'locate' not found, but can be installed with:
+sudo apt install plocate
+(stats) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ sudo apt install plocate
+[sudo] password for c4011027: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  auditd libauparse0t64
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  liburing2
+The following NEW packages will be installed:
+  liburing2 plocate
+0 upgraded, 2 newly installed, 0 to remove and 237 not upgraded.
+Need to get 160 kB of archives.
+After this operation, 623 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://gb.archive.ubuntu.com/ubuntu noble/main amd64 liburing2 amd64 2.5-1build1 [21.1 kB]
+Get:2 http://gb.archive.ubuntu.com/ubuntu noble/universe amd64 plocate amd64 1.1.19-2ubuntu2 [139 kB]
+Fetched 160 kB in 0s (783 kB/s)  
+Selecting previously unselected package liburing2:amd64.
+(Reading database ... 308792 files and directories currently installed.)
+Preparing to unpack .../liburing2_2.5-1build1_amd64.deb ...
+Unpacking liburing2:amd64 (2.5-1build1) ...
+Selecting previously unselected package plocate.
+Preparing to unpack .../plocate_1.1.19-2ubuntu2_amd64.deb ...
+Unpacking plocate (1.1.19-2ubuntu2) ...
+Setting up liburing2:amd64 (2.5-1build1) ...
+Setting up plocate (1.1.19-2ubuntu2) ...
+update-alternatives: using /usr/bin/plocate to provide /usr/bin/locate (locate) in auto mode
+info: Selecting GID from range 100 to 999 ...
+info: Adding group `plocate' (GID 124) ...
+Initializing plocate database; this may take some time... done
+Created symlink /etc/systemd/system/timers.target.wants/plocate-updatedb.timer → /usr/lib/systemd/system/plocate-updatedb.ti
+mer.
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.4) ...
+(stats) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ locate libqwt-qt4.so.5
+/home/c4011027/PhD_stuff/famias_dynamic/famias/libqwt-qt4.so.5
+/home/c4011027/PhD_stuff/famias_dynamic/famias/yes/libqwt-qt4.so.5
+/home/c4011027/famias/libqwt-qt4.so.5
+(stats) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ export LD_LIBRARY_PATH=~/PhD_stuff/famias_dynamic/famias:$LD_LIBRARY_PATH
+(stats) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ FAMIAS
+FAMIAS: error while loading shared libraries: libfreetype.so.6: cannot open shared object file: No such file or directory
+(stats) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ locate libfreetype.so.6
+/home/c4011027/anaconda3/envs/pssa_aims/lib/libfreetype.so.6
+/home/c4011027/anaconda3/envs/pssa_aims/lib/libfreetype.so.6.18.3
+/home/c4011027/anaconda3/envs/stats/lib/libfreetype.so.6
+/home/c4011027/anaconda3/envs/stats/lib/libfreetype.so.6.18.3
+/home/c4011027/anaconda3/envs/suppnet/lib/libfreetype.so.6
+/home/c4011027/anaconda3/envs/suppnet/lib/libfreetype.so.6.18.3
+/home/c4011027/anaconda3/lib/libfreetype.so.6
+/home/c4011027/anaconda3/lib/libfreetype.so.6.18.3
+/home/c4011027/anaconda3/pkgs/freetype-2.12.1-h267a509_2/lib/libfreetype.so.6
+/home/c4011027/anaconda3/pkgs/freetype-2.12.1-h267a509_2/lib/libfreetype.so.6.18.3
+/home/c4011027/anaconda3/pkgs/freetype-2.12.1-h4a9f257_0/lib/libfreetype.so.6
+/home/c4011027/anaconda3/pkgs/freetype-2.12.1-h4a9f257_0/lib/libfreetype.so.6.18.3
+/snap/core22/1722/usr/lib/x86_64-linux-gnu/libfreetype.so.6
+/snap/core22/1722/usr/lib/x86_64-linux-gnu/libfreetype.so.6.18.1
+/snap/core22/1748/usr/lib/x86_64-linux-gnu/libfreetype.so.6
+/snap/core22/1748/usr/lib/x86_64-linux-gnu/libfreetype.so.6.18.1
+/snap/gnome-3-34-1804/93/usr/lib/x86_64-linux-gnu/libfreetype.so.6
+/snap/gnome-3-34-1804/93/usr/lib/x86_64-linux-gnu/libfreetype.so.6.15.0
+/snap/gnome-42-2204/176/usr/lib/x86_64-linux-gnu/libfreetype.so.6
+/snap/gnome-42-2204/176/usr/lib/x86_64-linux-gnu/libfreetype.so.6.18.1
+/snap/gnome-42-2204/202/usr/lib/x86_64-linux-gnu/libfreetype.so.6
+/snap/gnome-42-2204/202/usr/lib/x86_64-linux-gnu/libfreetype.so.6.18.1
+/snap/snapd/23258/usr/lib/x86_64-linux-gnu/libfreetype.so.6
+/snap/snapd/23258/usr/lib/x86_64-linux-gnu/libfreetype.so.6.18.1
+/snap/snapd/23545/usr/lib/x86_64-linux-gnu/libfreetype.so.6
+/snap/snapd/23545/usr/lib/x86_64-linux-gnu/libfreetype.so.6.18.1
+/snap/vlc/3777/usr/lib/x86_64-linux-gnu/libfreetype.so.6
+/snap/vlc/3777/usr/lib/x86_64-linux-gnu/libfreetype.so.6.15.0
+/usr/lib/x86_64-linux-gnu/libfreetype.so.6
+/usr/lib/x86_64-linux-gnu/libfreetype.so.6.20.1
+(stats) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ conda activate pssa_aims
+(pssa_aims) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ FAMIAS
+FAMIAS: error while loading shared libraries: libfreetype.so.6: cannot open shared object file: No such file or directory
+(pssa_aims) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ export LD_LIBRARY_PATH=~/anaconda3/envs/pssa_aims/lib:$LD_LIBRARY_PATH
+(pssa_aims) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ FAMIAS
+FAMIAS: error while loading shared libraries: libfreetype.so.6: wrong ELF class: ELFCLASS64
+(pssa_aims) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ sudo apt-get install libfreetype6:i386
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  auditd libauparse0t64
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  gcc-14-base:i386 libbrotli1:i386 libbz2-1.0:i386 libc6:i386 libgcc-s1:i386 libidn2-0 libidn2-0:i386 libpng16-16t64:i386
+  libunistring5 libunistring5:i386 zlib1g:i386
+Suggested packages:
+  glibc-doc:i386 locales:i386 libnss-nis:i386 libnss-nisplus:i386
+The following NEW packages will be installed:
+  gcc-14-base:i386 libbrotli1:i386 libbz2-1.0:i386 libc6:i386 libfreetype6:i386 libgcc-s1:i386 libidn2-0:i386
+  libpng16-16t64:i386 libunistring5:i386 zlib1g:i386
+The following packages will be upgraded:
+  libidn2-0 libunistring5
+2 upgraded, 10 newly installed, 0 to remove and 235 not upgraded.
+Need to get 5,438 kB of archives.
+After this operation, 17.5 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 libunistring5 amd64 1.1-2build1.1 [536 kB]
+Get:2 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 libidn2-0 amd64 2.3.7-2build1.1 [66.2 kB]
+Get:3 http://gb.archive.ubuntu.com/ubuntu noble-updates/main i386 gcc-14-base i386 14.2.0-4ubuntu2~24.04 [50.8 kB]
+Get:4 http://gb.archive.ubuntu.com/ubuntu noble-updates/main i386 libgcc-s1 i386 14.2.0-4ubuntu2~24.04 [95.5 kB]
+Get:5 http://gb.archive.ubuntu.com/ubuntu noble-updates/main i386 libc6 i386 2.39-0ubuntu8.4 [3,010 kB]
+Get:6 http://gb.archive.ubuntu.com/ubuntu noble-updates/main i386 libbz2-1.0 i386 1.0.8-5.1build0.1 [33.8 kB]
+Get:7 http://gb.archive.ubuntu.com/ubuntu noble-updates/main i386 zlib1g i386 1:1.3.dfsg-3.1ubuntu2.1 [58.9 kB]
+Get:8 http://gb.archive.ubuntu.com/ubuntu noble-updates/main i386 libunistring5 i386 1.1-2build1.1 [547 kB]
+Get:9 http://gb.archive.ubuntu.com/ubuntu noble-updates/main i386 libidn2-0 i386 2.3.7-2build1.1 [102 kB]
+Get:10 http://gb.archive.ubuntu.com/ubuntu noble/main i386 libpng16-16t64 i386 1.6.43-5build1 [192 kB]
+Get:11 http://gb.archive.ubuntu.com/ubuntu noble/main i386 libbrotli1 i386 1.1.0-2build2 [334 kB]
+Get:12 http://gb.archive.ubuntu.com/ubuntu noble/main i386 libfreetype6 i386 2.13.2+dfsg-1build3 [412 kB]
+Fetched 5,438 kB in 3s (1,778 kB/s)         
+Preconfiguring packages ...
+(Reading database ... 308815 files and directories currently installed.)
+Preparing to unpack .../libunistring5_1.1-2build1.1_amd64.deb ...
+Unpacking libunistring5:amd64 (1.1-2build1.1) over (1.1-2build1) ...
+Selecting previously unselected package libunistring5:i386.
+Preparing to unpack .../libunistring5_1.1-2build1.1_i386.deb ...
+Unpacking libunistring5:i386 (1.1-2build1.1) ...
+Setting up libunistring5:amd64 (1.1-2build1.1) ...
+(Reading database ... 308818 files and directories currently installed.)
+Preparing to unpack .../libidn2-0_2.3.7-2build1.1_amd64.deb ...
+Unpacking libidn2-0:amd64 (2.3.7-2build1.1) over (2.3.7-2build1) ...
+Selecting previously unselected package libidn2-0:i386.
+Preparing to unpack .../libidn2-0_2.3.7-2build1.1_i386.deb ...
+Unpacking libidn2-0:i386 (2.3.7-2build1.1) ...
+Setting up libidn2-0:amd64 (2.3.7-2build1.1) ...
+Selecting previously unselected package gcc-14-base:i386.
+(Reading database ... 308820 files and directories currently installed.)
+Preparing to unpack .../0-gcc-14-base_14.2.0-4ubuntu2~24.04_i386.deb ...
+Unpacking gcc-14-base:i386 (14.2.0-4ubuntu2~24.04) ...
+Selecting previously unselected package libgcc-s1:i386.
+Preparing to unpack .../1-libgcc-s1_14.2.0-4ubuntu2~24.04_i386.deb ...
+Unpacking libgcc-s1:i386 (14.2.0-4ubuntu2~24.04) ...
+Selecting previously unselected package libc6:i386.
+Preparing to unpack .../2-libc6_2.39-0ubuntu8.4_i386.deb ...
+Unpacking libc6:i386 (2.39-0ubuntu8.4) ...
+Selecting previously unselected package libbz2-1.0:i386.
+Preparing to unpack .../3-libbz2-1.0_1.0.8-5.1build0.1_i386.deb ...
+Unpacking libbz2-1.0:i386 (1.0.8-5.1build0.1) ...
+Selecting previously unselected package zlib1g:i386.
+Preparing to unpack .../4-zlib1g_1%3a1.3.dfsg-3.1ubuntu2.1_i386.deb ...
+Unpacking zlib1g:i386 (1:1.3.dfsg-3.1ubuntu2.1) ...
+Selecting previously unselected package libpng16-16t64:i386.
+Preparing to unpack .../5-libpng16-16t64_1.6.43-5build1_i386.deb ...
+Unpacking libpng16-16t64:i386 (1.6.43-5build1) ...
+Selecting previously unselected package libbrotli1:i386.
+Preparing to unpack .../6-libbrotli1_1.1.0-2build2_i386.deb ...
+Unpacking libbrotli1:i386 (1.1.0-2build2) ...
+Selecting previously unselected package libfreetype6:i386.
+Preparing to unpack .../7-libfreetype6_2.13.2+dfsg-1build3_i386.deb ...
+Unpacking libfreetype6:i386 (2.13.2+dfsg-1build3) ...
+Setting up gcc-14-base:i386 (14.2.0-4ubuntu2~24.04) ...
+Setting up libgcc-s1:i386 (14.2.0-4ubuntu2~24.04) ...
+Setting up libc6:i386 (2.39-0ubuntu8.4) ...
+Setting up libbz2-1.0:i386 (1.0.8-5.1build0.1) ...
+Setting up libbrotli1:i386 (1.1.0-2build2) ...
+Setting up zlib1g:i386 (1:1.3.dfsg-3.1ubuntu2.1) ...
+Setting up libunistring5:i386 (1.1-2build1.1) ...
+Setting up libpng16-16t64:i386 (1.6.43-5build1) ...
+Setting up libidn2-0:i386 (2.3.7-2build1.1) ...
+Setting up libfreetype6:i386 (2.13.2+dfsg-1build3) ...
+Processing triggers for libc6-i386 (2.39-0ubuntu8.4) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.4) ...
+(pssa_aims) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ file $(which FAMIAS)
+./FAMIAS: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.2, for GNU/Linux 2.6.15, BuildID[sha1]=5f4a3e2945b1792c18b27592a02654cbc5f957b4, with debug_info, not stripped
+(pssa_aims) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ ls -l /usr/lib/i386-linux-gnu/libfreetype.so.6
+lrwxrwxrwx 1 root root 21 Mar 31  2024 /usr/lib/i386-linux-gnu/libfreetype.so.6 -> libfreetype.so.6.20.1
+(pssa_aims) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ export LD_LIBRARY_PATH=/usr/lib/i386-linux-gnu:$LD_LIBRARY_PATH
+(pssa_aims) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ FAMIAS
+FAMIAS: error while loading shared libraries: libgobject-2.0.so.0: wrong ELF class: ELFCLASS64
+(pssa_aims) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ ^C
+(pssa_aims) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ ldd $(which FAMIAS) | grep "wrong ELF class"
+(pssa_aims) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ sudo apt-get install libglib2.0-0:i386
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Note, selecting 'libglib2.0-0t64:i386' instead of 'libglib2.0-0:i386'
+The following packages were automatically installed and are no longer required:
+  auditd libauparse0t64
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  bsdextrautils bsdutils eject fdisk libblkid1 libblkid1:i386 libfdisk1 libffi8:i386 libmount1 libmount1:i386
+  libpcre2-16-0 libpcre2-32-0 libpcre2-8-0 libpcre2-8-0:i386 libselinux1 libselinux1:i386 libsmartcols1 libuuid1 mount
+  rfkill util-linux uuid-dev uuid-runtime
+Suggested packages:
+  low-memory-monitor:i386 nfs-common util-linux-extra util-linux-locales
+The following NEW packages will be installed:
+  libblkid1:i386 libffi8:i386 libglib2.0-0t64:i386 libmount1:i386 libpcre2-8-0:i386 libselinux1:i386
+The following packages will be upgraded:
+  bsdextrautils bsdutils eject fdisk libblkid1 libfdisk1 libmount1 libpcre2-16-0 libpcre2-32-0 libpcre2-8-0 libselinux1
+  libsmartcols1 libuuid1 mount rfkill util-linux uuid-dev uuid-runtime
+18 upgraded, 6 newly installed, 0 to remove and 217 not upgraded.
+Need to get 5,258 kB of archives.
+After this operation, 6,920 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 bsdutils amd64 1:2.39.3-9ubuntu6.2 [95.2 kB]
+Get:2 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 util-linux amd64 2.39.3-9ubuntu6.2 [1,127 kB]
+Get:3 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 mount amd64 2.39.3-9ubuntu6.2 [118 kB]
+Get:4 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 libsmartcols1 amd64 2.39.3-9ubuntu6.2 [65.2 kB]
+Get:5 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 uuid-dev amd64 2.39.3-9ubuntu6.2 [33.5 kB]
+Get:6 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 libuuid1 amd64 2.39.3-9ubuntu6.2 [35.5 kB]
+Get:7 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 uuid-runtime amd64 2.39.3-9ubuntu6.2 [33.1 kB]
+Get:8 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 libblkid1 amd64 2.39.3-9ubuntu6.2 [123 kB]
+Get:9 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 libpcre2-8-0 amd64 10.42-4ubuntu2.1 [227 kB]
+Get:10 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 libselinux1 amd64 3.5-2ubuntu2.1 [79.7 kB]
+Get:11 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 libmount1 amd64 2.39.3-9ubuntu6.2 [134 kB]
+Get:12 http://gb.archive.ubuntu.com/ubuntu noble-updates/main i386 libblkid1 i386 2.39.3-9ubuntu6.2 [192 kB]
+Get:13 http://gb.archive.ubuntu.com/ubuntu noble-updates/main i386 libpcre2-8-0 i386 10.42-4ubuntu2.1 [227 kB]
+Get:14 http://gb.archive.ubuntu.com/ubuntu noble-updates/main i386 libselinux1 i386 3.5-2ubuntu2.1 [84.9 kB]
+Get:15 http://gb.archive.ubuntu.com/ubuntu noble-updates/main i386 libmount1 i386 2.39.3-9ubuntu6.2 [200 kB]
+Get:16 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 eject amd64 2.39.3-9ubuntu6.2 [26.3 kB]
+Get:17 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 libfdisk1 amd64 2.39.3-9ubuntu6.2 [146 kB]
+Get:18 http://gb.archive.ubuntu.com/ubuntu noble/main i386 libffi8 i386 3.4.6-1build1 [22.8 kB]
+Get:19 http://gb.archive.ubuntu.com/ubuntu noble-updates/main i386 libglib2.0-0t64 i386 2.80.0-6ubuntu3.2 [1,666 kB]
+Get:20 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 bsdextrautils amd64 2.39.3-9ubuntu6.2 [73.9 kB]
+Get:21 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 fdisk amd64 2.39.3-9ubuntu6.2 [121 kB]
+Get:22 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 libpcre2-16-0 amd64 10.42-4ubuntu2.1 [210 kB]
+Get:23 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 libpcre2-32-0 amd64 10.42-4ubuntu2.1 [197 kB]
+Get:24 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 rfkill amd64 2.39.3-9ubuntu6.2 [20.2 kB]
+Fetched 5,258 kB in 3s (1,758 kB/s)
+(Reading database ... 309117 files and directories currently installed.)
+Preparing to unpack .../bsdutils_1%3a2.39.3-9ubuntu6.2_amd64.deb ...
+Unpacking bsdutils (1:2.39.3-9ubuntu6.2) over (1:2.39.3-9ubuntu6.1) ...
+Setting up bsdutils (1:2.39.3-9ubuntu6.2) ...
+(Reading database ... 309117 files and directories currently installed.)
+Preparing to unpack .../util-linux_2.39.3-9ubuntu6.2_amd64.deb ...
+Unpacking util-linux (2.39.3-9ubuntu6.2) over (2.39.3-9ubuntu6.1) ...
+Setting up util-linux (2.39.3-9ubuntu6.2) ...
+fstrim.service is a disabled or a static unit not running, not starting it.
+(Reading database ... 309117 files and directories currently installed.)
+Preparing to unpack .../mount_2.39.3-9ubuntu6.2_amd64.deb ...
+Unpacking mount (2.39.3-9ubuntu6.2) over (2.39.3-9ubuntu6.1) ...
+Preparing to unpack .../libsmartcols1_2.39.3-9ubuntu6.2_amd64.deb ...
+Unpacking libsmartcols1:amd64 (2.39.3-9ubuntu6.2) over (2.39.3-9ubuntu6.1) ...
+Setting up libsmartcols1:amd64 (2.39.3-9ubuntu6.2) ...
+(Reading database ... 309117 files and directories currently installed.)
+Preparing to unpack .../uuid-dev_2.39.3-9ubuntu6.2_amd64.deb ...
+Unpacking uuid-dev:amd64 (2.39.3-9ubuntu6.2) over (2.39.3-9ubuntu6.1) ...
+Preparing to unpack .../libuuid1_2.39.3-9ubuntu6.2_amd64.deb ...
+Unpacking libuuid1:amd64 (2.39.3-9ubuntu6.2) over (2.39.3-9ubuntu6.1) ...
+Setting up libuuid1:amd64 (2.39.3-9ubuntu6.2) ...
+(Reading database ... 309117 files and directories currently installed.)
+Preparing to unpack .../uuid-runtime_2.39.3-9ubuntu6.2_amd64.deb ...
+Unpacking uuid-runtime (2.39.3-9ubuntu6.2) over (2.39.3-9ubuntu6.1) ...
+Preparing to unpack .../libblkid1_2.39.3-9ubuntu6.2_amd64.deb ...
+Unpacking libblkid1:amd64 (2.39.3-9ubuntu6.2) over (2.39.3-9ubuntu6.1) ...
+Selecting previously unselected package libblkid1:i386.
+Preparing to unpack .../libblkid1_2.39.3-9ubuntu6.2_i386.deb ...
+Unpacking libblkid1:i386 (2.39.3-9ubuntu6.2) ...
+Setting up libblkid1:amd64 (2.39.3-9ubuntu6.2) ...
+(Reading database ... 309119 files and directories currently installed.)
+Preparing to unpack .../libpcre2-8-0_10.42-4ubuntu2.1_amd64.deb ...
+Unpacking libpcre2-8-0:amd64 (10.42-4ubuntu2.1) over (10.42-4ubuntu2) ...
+Selecting previously unselected package libpcre2-8-0:i386.
+Preparing to unpack .../libpcre2-8-0_10.42-4ubuntu2.1_i386.deb ...
+Unpacking libpcre2-8-0:i386 (10.42-4ubuntu2.1) ...
+Setting up libpcre2-8-0:amd64 (10.42-4ubuntu2.1) ...
+(Reading database ... 309121 files and directories currently installed.)
+Preparing to unpack .../libselinux1_3.5-2ubuntu2.1_amd64.deb ...
+Unpacking libselinux1:amd64 (3.5-2ubuntu2.1) over (3.5-2ubuntu2) ...
+Selecting previously unselected package libselinux1:i386.
+Preparing to unpack .../libselinux1_3.5-2ubuntu2.1_i386.deb ...
+Unpacking libselinux1:i386 (3.5-2ubuntu2.1) ...
+Setting up libselinux1:amd64 (3.5-2ubuntu2.1) ...
+(Reading database ... 309122 files and directories currently installed.)
+Preparing to unpack .../libmount1_2.39.3-9ubuntu6.2_amd64.deb ...
+Unpacking libmount1:amd64 (2.39.3-9ubuntu6.2) over (2.39.3-9ubuntu6.1) ...
+Selecting previously unselected package libmount1:i386.
+Preparing to unpack .../libmount1_2.39.3-9ubuntu6.2_i386.deb ...
+Unpacking libmount1:i386 (2.39.3-9ubuntu6.2) ...
+Setting up libmount1:amd64 (2.39.3-9ubuntu6.2) ...
+(Reading database ... 309124 files and directories currently installed.)
+Preparing to unpack .../0-eject_2.39.3-9ubuntu6.2_amd64.deb ...
+Unpacking eject (2.39.3-9ubuntu6.2) over (2.39.3-9ubuntu6.1) ...
+Preparing to unpack .../1-libfdisk1_2.39.3-9ubuntu6.2_amd64.deb ...
+Unpacking libfdisk1:amd64 (2.39.3-9ubuntu6.2) over (2.39.3-9ubuntu6.1) ...
+Selecting previously unselected package libffi8:i386.
+Preparing to unpack .../2-libffi8_3.4.6-1build1_i386.deb ...
+Unpacking libffi8:i386 (3.4.6-1build1) ...
+Selecting previously unselected package libglib2.0-0t64:i386.
+Preparing to unpack .../3-libglib2.0-0t64_2.80.0-6ubuntu3.2_i386.deb ...
+Unpacking libglib2.0-0t64:i386 (2.80.0-6ubuntu3.2) ...
+Preparing to unpack .../4-bsdextrautils_2.39.3-9ubuntu6.2_amd64.deb ...
+Unpacking bsdextrautils (2.39.3-9ubuntu6.2) over (2.39.3-9ubuntu6.1) ...
+Preparing to unpack .../5-fdisk_2.39.3-9ubuntu6.2_amd64.deb ...
+Unpacking fdisk (2.39.3-9ubuntu6.2) over (2.39.3-9ubuntu6.1) ...
+Preparing to unpack .../6-libpcre2-16-0_10.42-4ubuntu2.1_amd64.deb ...
+Unpacking libpcre2-16-0:amd64 (10.42-4ubuntu2.1) over (10.42-4ubuntu2) ...
+Preparing to unpack .../7-libpcre2-32-0_10.42-4ubuntu2.1_amd64.deb ...
+Unpacking libpcre2-32-0:amd64 (10.42-4ubuntu2.1) over (10.42-4ubuntu2) ...
+Preparing to unpack .../8-rfkill_2.39.3-9ubuntu6.2_amd64.deb ...
+Unpacking rfkill (2.39.3-9ubuntu6.2) over (2.39.3-9ubuntu6.1) ...
+Setting up bsdextrautils (2.39.3-9ubuntu6.2) ...
+Setting up libpcre2-16-0:amd64 (10.42-4ubuntu2.1) ...
+Setting up eject (2.39.3-9ubuntu6.2) ...
+Setting up libpcre2-32-0:amd64 (10.42-4ubuntu2.1) ...
+Setting up uuid-dev:amd64 (2.39.3-9ubuntu6.2) ...
+Setting up rfkill (2.39.3-9ubuntu6.2) ...
+Setting up libpcre2-8-0:i386 (10.42-4ubuntu2.1) ...
+Setting up libfdisk1:amd64 (2.39.3-9ubuntu6.2) ...
+Setting up libffi8:i386 (3.4.6-1build1) ...
+Setting up mount (2.39.3-9ubuntu6.2) ...
+Setting up uuid-runtime (2.39.3-9ubuntu6.2) ...
+uuidd.service is a disabled or a static unit not running, not starting it.
+Setting up libblkid1:i386 (2.39.3-9ubuntu6.2) ...
+Setting up fdisk (2.39.3-9ubuntu6.2) ...
+Setting up libselinux1:i386 (3.5-2ubuntu2.1) ...
+Setting up libmount1:i386 (2.39.3-9ubuntu6.2) ...
+Setting up libglib2.0-0t64:i386 (2.80.0-6ubuntu3.2) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libglib2.0-0t64:amd64 (2.80.0-6ubuntu3.2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.4) ...
+(pssa_aims) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ ls -l /usr/lib/i386-linux-gnu/libgobject-2.0.so.0
+lrwxrwxrwx 1 root root 26 Nov 13 17:42 /usr/lib/i386-linux-gnu/libgobject-2.0.so.0 -> libgobject-2.0.so.0.8000.0
+(pssa_aims) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ FAMIAS
+FAMIAS: error while loading shared libraries: libSM.so.6: cannot open shared object file: No such file or directory
+(pssa_aims) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ locate libSM.so.6
+/home/c4011027/anaconda3/envs/suppnet/lib/libSM.so.6
+/home/c4011027/anaconda3/envs/suppnet/lib/libSM.so.6.0.1
+/home/c4011027/anaconda3/pkgs/xorg-libsm-1.2.4-h7391055_0/lib/libSM.so.6
+/home/c4011027/anaconda3/pkgs/xorg-libsm-1.2.4-h7391055_0/lib/libSM.so.6.0.1
+/snap/gnome-3-34-1804/93/usr/lib/x86_64-linux-gnu/libSM.so.6
+/snap/gnome-3-34-1804/93/usr/lib/x86_64-linux-gnu/libSM.so.6.0.1
+/snap/gnome-42-2204/176/usr/lib/x86_64-linux-gnu/libSM.so.6
+/snap/gnome-42-2204/176/usr/lib/x86_64-linux-gnu/libSM.so.6.0.1
+/snap/gnome-42-2204/202/usr/lib/x86_64-linux-gnu/libSM.so.6
+/snap/gnome-42-2204/202/usr/lib/x86_64-linux-gnu/libSM.so.6.0.1
+/snap/thunderbird/644/usr/lib/x86_64-linux-gnu/libSM.so.6
+/snap/thunderbird/644/usr/lib/x86_64-linux-gnu/libSM.so.6.0.1
+/snap/thunderbird/663/usr/lib/x86_64-linux-gnu/libSM.so.6
+/snap/thunderbird/663/usr/lib/x86_64-linux-gnu/libSM.so.6.0.1
+/snap/vlc/3777/usr/lib/x86_64-linux-gnu/libSM.so.6
+/snap/vlc/3777/usr/lib/x86_64-linux-gnu/libSM.so.6.0.1
+/usr/lib/x86_64-linux-gnu/libSM.so.6
+/usr/lib/x86_64-linux-gnu/libSM.so.6.0.1
+(pssa_aims) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ sudo apt-get install libsm6:i386
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  auditd libauparse0t64
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libbsd0 libbsd0:i386 libice6:i386 libmd0 libmd0:i386 libuuid1:i386
+The following NEW packages will be installed:
+  libbsd0:i386 libice6:i386 libmd0:i386 libsm6:i386 libuuid1:i386
+The following packages will be upgraded:
+  libbsd0 libmd0
+2 upgraded, 5 newly installed, 0 to remove and 215 not upgraded.
+Need to get 241 kB of archives.
+After this operation, 483 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 libmd0 amd64 1.1.0-2build1.1 [27.0 kB]
+Get:2 http://gb.archive.ubuntu.com/ubuntu noble-updates/main i386 libmd0 i386 1.1.0-2build1.1 [29.4 kB]
+Get:3 http://gb.archive.ubuntu.com/ubuntu noble-updates/main i386 libuuid1 i386 2.39.3-9ubuntu6.2 [36.8 kB]
+Get:4 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 libbsd0 amd64 0.12.1-1build1.1 [41.2 kB]
+Get:5 http://gb.archive.ubuntu.com/ubuntu noble-updates/main i386 libbsd0 i386 0.12.1-1build1.1 [45.3 kB]
+Get:6 http://gb.archive.ubuntu.com/ubuntu noble/main i386 libice6 i386 2:1.0.10-1build3 [44.5 kB]
+Get:7 http://gb.archive.ubuntu.com/ubuntu noble/main i386 libsm6 i386 2:1.2.3-1build3 [16.4 kB]
+Fetched 241 kB in 0s (1,048 kB/s)   
+(Reading database ... 309142 files and directories currently installed.)
+Preparing to unpack .../libmd0_1.1.0-2build1.1_amd64.deb ...
+Unpacking libmd0:amd64 (1.1.0-2build1.1) over (1.1.0-2build1) ...
+Selecting previously unselected package libmd0:i386.
+Preparing to unpack .../libmd0_1.1.0-2build1.1_i386.deb ...
+Unpacking libmd0:i386 (1.1.0-2build1.1) ...
+Setting up libmd0:amd64 (1.1.0-2build1.1) ...
+Selecting previously unselected package libuuid1:i386.
+(Reading database ... 309144 files and directories currently installed.)
+Preparing to unpack .../libuuid1_2.39.3-9ubuntu6.2_i386.deb ...
+Unpacking libuuid1:i386 (2.39.3-9ubuntu6.2) ...
+Preparing to unpack .../libbsd0_0.12.1-1build1.1_amd64.deb ...
+Unpacking libbsd0:amd64 (0.12.1-1build1.1) over (0.12.1-1build1) ...
+Selecting previously unselected package libbsd0:i386.
+Preparing to unpack .../libbsd0_0.12.1-1build1.1_i386.deb ...
+Unpacking libbsd0:i386 (0.12.1-1build1.1) ...
+Selecting previously unselected package libice6:i386.
+Preparing to unpack .../libice6_2%3a1.0.10-1build3_i386.deb ...
+Unpacking libice6:i386 (2:1.0.10-1build3) ...
+Selecting previously unselected package libsm6:i386.
+Preparing to unpack .../libsm6_2%3a1.2.3-1build3_i386.deb ...
+Unpacking libsm6:i386 (2:1.2.3-1build3) ...
+Setting up libuuid1:i386 (2.39.3-9ubuntu6.2) ...
+Setting up libmd0:i386 (1.1.0-2build1.1) ...
+Setting up libbsd0:amd64 (0.12.1-1build1.1) ...
+Setting up libbsd0:i386 (0.12.1-1build1.1) ...
+Setting up libice6:i386 (2:1.0.10-1build3) ...
+Setting up libsm6:i386 (2:1.2.3-1build3) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.4) ...
+(pssa_aims) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ FAMIAS
+FAMIAS: error while loading shared libraries: libXrender.so.1: cannot open shared object file: No such file or directory
+(pssa_aims) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ sudo apt-get install libxrender1:i386
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  auditd libauparse0t64
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libx11-6:i386 libxau6:i386 libxcb1:i386 libxdmcp6:i386
+The following NEW packages will be installed:
+  libx11-6:i386 libxau6:i386 libxcb1:i386 libxdmcp6:i386 libxrender1:i386
+0 upgraded, 5 newly installed, 0 to remove and 215 not upgraded.
+Need to get 763 kB of archives.
+After this operation, 1,826 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://gb.archive.ubuntu.com/ubuntu noble/main i386 libxau6 i386 1:1.0.9-1build6 [7,520 B]
+Get:2 http://gb.archive.ubuntu.com/ubuntu noble/main i386 libxdmcp6 i386 1:1.1.3-0ubuntu6 [10.7 kB]
+Get:3 http://gb.archive.ubuntu.com/ubuntu noble/main i386 libxcb1 i386 1.15-1ubuntu2 [54.3 kB]
+Get:4 http://gb.archive.ubuntu.com/ubuntu noble/main i386 libx11-6 i386 2:1.8.7-1build1 [670 kB]
+Get:5 http://gb.archive.ubuntu.com/ubuntu noble/main i386 libxrender1 i386 1:0.9.10-1.1build1 [20.5 kB]
+Fetched 763 kB in 1s (1,395 kB/s)       
+Selecting previously unselected package libxau6:i386.
+(Reading database ... 309152 files and directories currently installed.)
+Preparing to unpack .../libxau6_1%3a1.0.9-1build6_i386.deb ...
+Unpacking libxau6:i386 (1:1.0.9-1build6) ...
+Selecting previously unselected package libxdmcp6:i386.
+Preparing to unpack .../libxdmcp6_1%3a1.1.3-0ubuntu6_i386.deb ...
+Unpacking libxdmcp6:i386 (1:1.1.3-0ubuntu6) ...
+Selecting previously unselected package libxcb1:i386.
+Preparing to unpack .../libxcb1_1.15-1ubuntu2_i386.deb ...
+Unpacking libxcb1:i386 (1.15-1ubuntu2) ...
+Selecting previously unselected package libx11-6:i386.
+Preparing to unpack .../libx11-6_2%3a1.8.7-1build1_i386.deb ...
+Unpacking libx11-6:i386 (2:1.8.7-1build1) ...
+Selecting previously unselected package libxrender1:i386.
+Preparing to unpack .../libxrender1_1%3a0.9.10-1.1build1_i386.deb ...
+Unpacking libxrender1:i386 (1:0.9.10-1.1build1) ...
+Setting up libxau6:i386 (1:1.0.9-1build6) ...
+Setting up libxdmcp6:i386 (1:1.1.3-0ubuntu6) ...
+Setting up libxcb1:i386 (1.15-1ubuntu2) ...
+Setting up libx11-6:i386 (2:1.8.7-1build1) ...
+Setting up libxrender1:i386 (1:0.9.10-1.1build1) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.4) ...
+(pssa_aims) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ FAMIAS
+FAMIAS: error while loading shared libraries: libfontconfig.so.1: wrong ELF class: ELFCLASS64
+(pssa_aims) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ sudo apt-get install libfontconfig1:i386
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  auditd libauparse0t64
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libexpat1:i386
+The following NEW packages will be installed:
+  libexpat1:i386 libfontconfig1:i386
+0 upgraded, 2 newly installed, 0 to remove and 215 not upgraded.
+Need to get 236 kB of archives.
+After this operation, 764 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://gb.archive.ubuntu.com/ubuntu noble-updates/main i386 libexpat1 i386 2.6.1-2ubuntu0.2 [90.7 kB]
+Get:2 http://gb.archive.ubuntu.com/ubuntu noble/main i386 libfontconfig1 i386 2.15.0-1.1ubuntu2 [145 kB]
+Fetched 236 kB in 0s (583 kB/s)              
+Selecting previously unselected package libexpat1:i386.
+(Reading database ... 309162 files and directories currently installed.)
+Preparing to unpack .../libexpat1_2.6.1-2ubuntu0.2_i386.deb ...
+Unpacking libexpat1:i386 (2.6.1-2ubuntu0.2) ...
+Selecting previously unselected package libfontconfig1:i386.
+Preparing to unpack .../libfontconfig1_2.15.0-1.1ubuntu2_i386.deb ...
+Unpacking libfontconfig1:i386 (2.15.0-1.1ubuntu2) ...
+Setting up libexpat1:i386 (2.6.1-2ubuntu0.2) ...
+Setting up libfontconfig1:i386 (2.15.0-1.1ubuntu2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.4) ...
+(pssa_aims) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ FAMIAS
+FAMIAS: error while loading shared libraries: libXext.so.6: cannot open shared object file: No such file or directory
+(pssa_aims) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ sudo apt-get install libXext:i386
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package libXext:i386
+(pssa_aims) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ sudo dpkg --add-architecture i386
+(pssa_aims) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ sudo apt-get update
+Hit:1 http://gb.archive.ubuntu.com/ubuntu noble InRelease
+Get:2 http://gb.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]                                                 
+Get:3 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]                                                  
+Get:4 https://packages.microsoft.com/ubuntu/22.04/prod jammy InRelease [3,632 B]                                           
+Get:5 http://gb.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]                                               
+Get:6 https://packages.microsoft.com/repos/code stable InRelease [3,590 B]                                                 
+Get:7 http://gb.archive.ubuntu.com/ubuntu noble-updates/main i386 Packages [429 kB]                                        
+Get:8 http://security.ubuntu.com/ubuntu noble-security/main i386 Packages [242 kB]                             
+Get:9 https://dl.google.com/linux/chrome/deb stable InRelease [1,825 B]                                                    
+Get:10 https://packages.microsoft.com/ubuntu/22.04/prod jammy/main amd64 Packages [185 kB]                                 
+Get:11 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [881 kB]                                      
+Get:12 https://download.sublimetext.com apt/stable/ InRelease [2,536 B]                                                    
+Get:13 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [634 kB]                                       
+Get:14 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,212 B]                                        
+Get:15 http://gb.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [199 kB]                                      
+Get:16 http://gb.archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [150 kB]                                    
+Get:17 http://gb.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [680 kB]                                
+Get:18 http://security.ubuntu.com/ubuntu noble-security/main Translation-en [121 kB]                                       
+Get:19 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [8,976 B]                                    
+Get:20 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [650 kB]                                 
+Get:21 http://gb.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [135 kB]                                
+Get:22 https://packages.microsoft.com/repos/code stable/main amd64 Packages [17.3 kB]                                
+Get:23 http://gb.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]                           
+Get:24 http://gb.archive.ubuntu.com/ubuntu noble-updates/universe i386 Packages [623 kB]                     
+Get:25 https://packages.microsoft.com/repos/code stable/main arm64 Packages [17.4 kB]                                    
+Get:26 https://packages.microsoft.com/repos/code stable/main armhf Packages [17.5 kB]                            
+Get:27 http://security.ubuntu.com/ubuntu noble-security/restricted Translation-en [128 kB]           
+Get:28 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]      
+Get:29 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [815 kB]
+Get:30 http://gb.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1,025 kB]        
+Get:31 http://security.ubuntu.com/ubuntu noble-security/universe i386 Packages [506 kB]      
+Get:32 http://gb.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [256 kB]    
+Get:33 http://security.ubuntu.com/ubuntu noble-security/universe Translation-en [174 kB]         
+Get:34 http://gb.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [363 kB]            
+Get:35 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [51.9 kB]                     
+Get:36 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [19.4 kB]                       
+Get:37 http://security.ubuntu.com/ubuntu noble-security/multiverse Translation-en [4,308 B]                 
+Get:38 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [212 B]              
+Get:39 http://gb.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [23.4 kB]
+Get:40 http://gb.archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [5,308 B]
+Get:41 http://gb.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+Get:42 http://gb.archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [208 B]
+Get:43 http://gb.archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [216 B]
+Get:44 http://gb.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [14.2 kB]
+Get:45 http://gb.archive.ubuntu.com/ubuntu noble-backports/universe i386 Packages [8,976 B]
+Get:46 http://gb.archive.ubuntu.com/ubuntu noble-backports/universe Translation-en [12.1 kB]
+Get:47 http://gb.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [20.0 kB]
+Get:48 http://gb.archive.ubuntu.com/ubuntu noble-backports/universe Icons (48x48) [13.2 kB]
+Get:49 http://gb.archive.ubuntu.com/ubuntu noble-backports/universe Icons (64x64) [17.9 kB]
+Get:50 http://gb.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Fetched 8,843 kB in 5s (1,755 kB/s)                             
+Reading package lists... Done
+(pssa_aims) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ sudo apt-get install libxext6:i386
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  auditd libauparse0t64
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  libxext6:i386
+0 upgraded, 1 newly installed, 0 to remove and 243 not upgraded.
+Need to get 33.4 kB of archives.
+After this operation, 113 kB of additional disk space will be used.
+Get:1 http://gb.archive.ubuntu.com/ubuntu noble/main i386 libxext6 i386 2:1.3.4-1build2 [33.4 kB]
+Fetched 33.4 kB in 0s (386 kB/s)        
+Selecting previously unselected package libxext6:i386.
+(Reading database ... 309168 files and directories currently installed.)
+Preparing to unpack .../libxext6_2%3a1.3.4-1build2_i386.deb ...
+Unpacking libxext6:i386 (2:1.3.4-1build2) ...
+Setting up libxext6:i386 (2:1.3.4-1build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.4) ...
+(pssa_aims) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ FAMIAS
+FAMIAS: error while loading shared libraries: libXt.so.6: cannot open shared object file: No such file or directory
+(pssa_aims) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ sudo apt-get install libxt6:i386
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Note, selecting 'libxt6t64:i386' instead of 'libxt6:i386'
+The following packages were automatically installed and are no longer required:
+  auditd libauparse0t64
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  libxt6t64:i386
+0 upgraded, 1 newly installed, 0 to remove and 243 not upgraded.
+Need to get 181 kB of archives.
+After this operation, 466 kB of additional disk space will be used.
+Get:1 http://gb.archive.ubuntu.com/ubuntu noble/main i386 libxt6t64 i386 1:1.2.1-1.2build1 [181 kB]
+Fetched 181 kB in 0s (1,090 kB/s)      
+Selecting previously unselected package libxt6t64:i386.
+(Reading database ... 309170 files and directories currently installed.)
+Preparing to unpack .../libxt6t64_1%3a1.2.1-1.2build1_i386.deb ...
+Unpacking libxt6t64:i386 (1:1.2.1-1.2build1) ...
+Setting up libxt6t64:i386 (1:1.2.1-1.2build1) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.4) ...
+(pssa_aims) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ FAMIAS
+QGtkStyle cannot be used together with the GTK_Qt engine.
+(pssa_aims) c4011027@sage-301536:~/PhD_stuff/famias_dynamic/famias$ 
+
